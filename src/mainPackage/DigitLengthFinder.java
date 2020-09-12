@@ -7,19 +7,17 @@ public class DigitLengthFinder {
 	}
 
 	// Finds the amount of digits in an integer
+	//This version replaces the loop with a Math.log statement
 	public static int findNumberLength(int inputNumber) {
 		//Spits out 0 if input is 0
 		if(inputNumber == 0) {
 			return 0;
 		}
-		var count = 1;
-		//Loops to count digit
-		while (inputNumber / 10 > 0) {
-			inputNumber = inputNumber/10;
-			count++;
+		else {
+			
+			return (int) Math.log10(inputNumber)+1;
+			
 		}
-		
-		return count;
 	}
 
 }
