@@ -1,2 +1,3 @@
 module Project {
+	requires junit;
 }
