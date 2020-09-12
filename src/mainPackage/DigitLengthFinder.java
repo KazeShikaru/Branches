@@ -21,5 +21,16 @@ public class DigitLengthFinder {
 		
 		return count;
 	}
+	
+	// Finds the amount of digits in an long (overloading)
+	public static int findNumberLength(long inputNumber) {
+		if(inputNumber == 0) {
+			return 0;
+		}
+		String num = inputNumber+"";
+		System.out.println(num);
+		return num.length();
+		
+	}
 
 }
