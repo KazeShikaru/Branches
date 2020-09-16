@@ -21,7 +21,7 @@ public class DigitLengthFinder {
 		
 		return count;
 	}
-	
+	//
 	// Finds the amount of digits in an long (overloading)
 	public static int findNumberLength(long inputNumber) {
 		if(inputNumber == 0) {
